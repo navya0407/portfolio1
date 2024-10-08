@@ -1,0 +1,157 @@
+ <!-- Service Section -->  
+                    <div id="service" class="section">                        
+                        <div class="section-wrapper block">
+                            <div class="content-1300">
+                                <div class="row">
+                                    <div class="one-half width-55">
+                                        <div class="services-wrapper">
+                                            <div class="service-holder">
+                                                <img src="images/service1.png" alt="" />
+                                                <h4 class="service-title">Develop</h4>
+                                                <div class="service-text">
+                                                    A full stack allaround designer that may or may not include a guide for specific creative people
+                                                </div>                                        
+                                            </div>                               
+
+                                            <div class="service-holder m-right-0">
+                                                <img src="images/service2.png" alt="" />
+                                                <h4 class="service-title">Design</h4>
+                                                <div class="service-text">
+                                                    Tellus pharetra erat tristique erat donec dignissim etiam sed malesik enim sodales lorem ipsum
+                                                </div>                                        
+                                            </div>                                
+
+                                            <div class="service-holder m-bottom-0">
+                                                <img src="images/service3.png" alt="" />
+                                                <h4 class="service-title">Implement</h4>
+                                                <div class="service-text">
+                                                    Vestibulum consequat, dignissim tellus sollicitudin vulputate elit aliquet ullamcorper feugiat nisi
+                                                </div>                                        
+                                            </div>
+
+                                            <div class="service-holder m-right-0 m-bottom-0">
+                                                <img src="images/service4.png" alt="" />
+                                                <h4 class="service-title">Optimize</h4>
+                                                <div class="service-text">
+                                                    Quam facilisi nunc faucibus at porttitor vestibulum consequat dignissim tellus sollicitudin
+                                                </div>                                        
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="one-half width-40 last">                                
+                                        <h2 class="entry-title section-title">Services</h2>
+                                        <p class="section-info">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra tristique placerat in massa consectetur quisque nunc fames.
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra tristique placerat in massa consectetur quisque. Nunc ac fames lectus in libero aliquet. 
+                                        </p>
+                                        <p>
+                                            Faucibus sed tristique fames sed aliquet ultricies eget viverra arcu. Vitae faucibus diam consequat maecenas. Turpis metus sit diam purus leo in varius ac quam. Nunc amet tristique volutpat adipiscing vulputate phasellus. Volutpat faucibus 
+                                        </p>
+
+                                        <div class="button-group-wrapper">
+                                            <a class="button">Download CV</a> 
+                                            <a href="#portfolio" class="button">Check My Portfolio</a>                                                                   
+                                        </div>
+                                    </div>                                                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!-- Portfolio Section -->  
+                    <div id="portfolio" class="section">                        
+                        <div class="section-wrapper block">
+                            <div class="content-1300">
+                                <div id="portfolio-wrapper" class="relative">
+                                    <div class="category-filter">
+                                        <div class="category-filter-icon"></div>                       
+                                    </div>
+                                    <div class="category-filter-list button-group filters-button-group">
+                                        <div class="button is-checked" data-filter="*">All</div>
+                                        <div class="button" data-filter=".text">Text</div>
+                                        <div class="button" data-filter=".video">Video</div>
+                                        <div class="button" data-filter=".image">Image</div>                                        
+                                    </div>
+                                    <div class="portfolio-load-content-holder"></div>
+                                    <div class="grid" id="portfolio-grid">                                                            
+                                        <div class="grid-sizer"></div>
+
+                                        <div id="p-item-1" class="grid-item element-item p-one-third text">
+                                            <a class="item-link ajax-portfolio" href="portfolio-1.html" data-id="1">
+                                                <img src="images/portfolio1.jpg" alt="" />
+                                                <div class="portfolio-text-holder">
+                                                    <div class="portfolio-text-wrapper">
+                                                        <p class="portfolio-text">Home</p>
+                                                        <p class="portfolio-cat">Text</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div id="p-item-2" class="grid-item element-item p-one-third text">
+                                            <a class="item-link ajax-portfolio" href="portfolio-2.html" data-id="2">
+                                                <img src="images/portfolio2.jpg" alt="" />
+                                                <div class="portfolio-text-holder">
+                                                    <div class="portfolio-text-wrapper">
+                                                        <p class="portfolio-text">Stairways</p>
+                                                        <p class="portfolio-cat">Text</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div id="p-item-3" class="grid-item element-item p-one-third text">
+                                            <a class="item-link ajax-portfolio" href="portfolio-3.html" data-id="3">
+                                                <img src="images/portfolio3.jpg" alt="" />
+                                                <div class="portfolio-text-holder">
+                                                    <div class="portfolio-text-wrapper">
+                                                        <p class="portfolio-text">Sneakers</p>
+                                                        <p class="portfolio-cat">Text</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="grid-item element-item p-one-third video">
+                                            <a class="item-link" href="https://vimeo.com/199192931" data-rel="prettyPhoto[portfolio]">
+                                                <img src="images/portfolio4.jpg" alt="" />
+                                                <div class="portfolio-text-holder">
+                                                    <div class="portfolio-text-wrapper">
+                                                        <p class="portfolio-text">Design</p>
+                                                        <p class="portfolio-cat">Video</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="grid-item element-item p-one-third image">
+                                            <a class="item-link" href="images/item_03.jpg" data-rel="prettyPhoto[portfolio]">
+                                                <img src="images/portfolio5.jpg" alt="" />
+                                                <div class="portfolio-text-holder">
+                                                    <div class="portfolio-text-wrapper">
+                                                        <p class="portfolio-text">Leaf</p>
+                                                        <p class="portfolio-cat">Image</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="grid-item element-item p-one-third image">
+                                            <a class="item-link" href="images/item_02.jpg" data-rel="prettyPhoto[portfolio]">
+                                                <img src="images/portfolio6.jpg" alt="" />
+                                                <div class="portfolio-text-holder">
+                                                    <div class="portfolio-text-wrapper">
+                                                        <p class="portfolio-text">Bottle</p>
+                                                        <p class="portfolio-cat">Image</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>                
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
