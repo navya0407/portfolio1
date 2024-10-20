@@ -1,289 +1,249 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-    <head>
-        <title>Navya-Resume </title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="keywords" content="HTML, CSS, JavaScript" />
-        <meta name="author" content="Navya" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navya Rathore - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@500&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(120deg, rgb(255, 227, 105), #A9DEF9);
+            color: #362525;
+            overflow-x: hidden;
+        }
 
-        <link rel="shortcut icon" href="images/favicon.ico" />      
-        <link href='https://fonts.googleapis.com/css?family=Poppins:400,700,800' rel='stylesheet' type='text/css'>	             
-        <link rel="stylesheet" type="text/css"  href='style.css' />
+        header {
+            background: rgba(246, 148, 193,0.7);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 10px rgba(228, 193, 249, 0.4);
+        }
 
-        <!--[if lt IE 9]>
-                <script src="js/html5.js"></script>            
-                <script src="js/respond.min.js"></script>                   
-        <![endif]-->                
-    </head>
+        header h1 {
+            margin: 0;
+            font-family: 'Pacifico', cursive;
+            font-size: 3.5em;
+            letter-spacing: 1px;
+            color: #f4f4f4;
+            animation: fadeIn 2s ease-in-out;
+        }
 
-    <body>
+        header p {
+            margin: 5px 0;
+            font-size: 1.1em;
+            color: #ffffff;
+        }
 
-        <!-- Preloader Gif -->
-        <div class="doc-loader">
-            <img src="images/preloader.gif" alt="Loading">
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            animation: slideIn 1s ease-out;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .section h2 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 3px solid #E4C1F9;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .section ul li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .section ul li:before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: #8e44ad;
+            font-weight: bold;
+        }
+
+        .section ul li strong {
+            color: #2980b9;
+        }
+
+        a {
+            color: #8e44ad;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #8a67cf;
+        }
+
+        footer {
+            background: rgba(55, 35, 67, 0.8);
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .highlight {
+            background-color: #8e44ad;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Animated Background Effect */
+        .section:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 200%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255,255,255,0.1), rgba(255,255,255,0));
+            transform: skewX(-25deg);
+            transition: left 0.5s ease;
+        }
+
+        .section:hover:after {
+            left: 100%;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Image Styling */
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            margin: 10px auto;
+            display: block;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="me.jpg" alt="Profile Picture" class="profile-image">
+        <h1>Navya Rathore</h1>
+        <p>India </p>
+        <p><a href="https://www.linkedin.com/in/navya-rathore-26a0081ba/">LinkedIn</a></p>
+        <p><a href="https://github.com/navya0407">GitHub</a></p>
+        <p>
+            
+                <a href="https://drive.google.com/file/d/1PmfgAZyyrZ3JiBvCV9BH4SlIpGuKTlrB/view?usp=sharing" class="button"><span class="highlight">Download Cover Letter</span></a>
+                
+                <br>
+      
+                <a href="https://drive.google.com/file/d/1FpVPBXaqw7otB9mQk5vPRu_WfTNOgLHw/view?usp=sharing" class="button"><span class="highlight">Download Resume</span></a>                                                                   
+            
+        </p>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>About Me</h2>
+            <p>I am a Computer Science & Engineering graduate with a specialization in Artificial Intelligence and Machine Learning. My passion for coding, problem-solving, and creating impactful tech solutions drives me to continuously push the boundaries of technology.</p>
         </div>
 
-        <div id="content" class="site-content">
+        <div class="section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>B.Tech: Computer Science & Engineering (Artificial Intelligence & Machine Learning)</strong><br>Dr. A.P.J. Abdul Kalam Technical University | 2020 - 2024</li>
+            </ul>
+        </div>
 
-            <div class="content-left">
-                <div class="content-left-wrapper">                     
-                    <header>
-                        <div class="toggle-holder">
-                            <div id="toggle">
-                                <div class="menu-line"></div>
-                            </div>
-                        </div>  
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python, C, Java</li>
+                <li><strong>Technologies and Tools:</strong> AWS, OpenCV, ResNet</li>
+                <li><strong>Core Competencies:</strong> Object-Oriented Programming, Data Structures & Algorithms, Machine Learning</li>
+            </ul>
+        </div>
 
-                        <div class="top-pagination">
-                            <div class="current-num">
-                                <span>01</span>                                    
-                            </div>
-                            <div class="pagination-div"></div>
-                            <div class="total-pages-num"></div>
-                        </div>
+        <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>E-commerce Website with Image Search:</strong> Enhanced product search relevance by 30% using ResNet for image recognition.</li>
+                <li><strong>Attendance System Using Face Recognition:</strong> Reduced manual tracking time by over 30 hours per month with a 95% accuracy rate.</li>
+                <li><strong>Real-time Auction Platform:</strong> Handled up to 10,000 transactions per day with enhanced security and performance.</li>
+            </ul>
+        </div>
 
-                        <div class="menu-holder">
-                            <div class="menu-wrapper relative">                                 
-                                <nav id="header-main-menu">
-                                    <ul class="main-menu sm sm-clean">
-                                        <li><a href="#home">Home</a></li>                                
-                                        <li><a href="#resume">Resume</a></li>                                  
-                                        <li><a href="#skills">Skills</a></li>                                  
-                                        <li><a href="#contact">Contact</a></li>                                  
-                                    </ul>
-                                </nav>                            
-                            </div>
-                        </div>               
+        <div class="section">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Ranked in the top 2% in the national-level coding competition CodeKaze.</li>
+                <li>Achieved a 5-star rating on Hackerrank, placing in the top 10% globally.</li>
+                <li>Selected for Amazon ML Summer School, outperforming 85% of participants.</li>
+                <li>Published a paper on AI and recommendation systems at Engineering Advances 2024.</li>
+            </ul>
+        </div>
 
-                        <div class="my-info-wrapper">
-                            <div class="my-info">
-                                <p class="my-info-title">NAME</p>
-                                <p class="my-info-content">Navya Rathore</p>
-                            </div>
+        <div class="section">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Problem Solving (Basic) – Hackerrank (Top 10% globally)</li>
+                <li>Microsoft Learn Student Ambassador</li>
+            </ul>
+        </div>
+    </div>
 
-                            <div class="my-info">
-                                <p class="my-info-title">ROLE</p>
-                                <p class="my-info-content">Developer</p>
-                            </div>
+    <footer>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/navya-rathore-26a0081ba/">LinkedIn</a></p>
+    </footer>
 
-                            
-                            
-
-                            <img class="my-info-signature" src="images/signature.png" alt="" />  
-                        </div>   
-
-                        <div class="big-num">                              
-                            <div class="current-big-num">01</div>
-                            <div class="icon-scroll"></div>  
-                        </div>
-                    </header>
-                </div>        
-
-            </div>
-
-            <div class="content-right">  
-                <div class="content-right-wrapper">
-                    
-                    <!-- Home Section -->  
-                    <div id="home" class="section full-width-section">
-                        <div class="section-wrapper block">
-                            <div class="home-left-part">
-                                <p class="site-des">Hello. My name is</p>
-                                <h1 class="entry-title">Navya Rathore</h1>                                
-                                <p class="site-info">
-                                    I am a B.Tech graduate specializing in Artificial Intelligence and Machine Learning, with hands-on experience in developing innovative projects . I have strong technical skills along with a proven track record in problem-solving and team collaboration .
-                                </p>
-                              
-
-                                <div class="social-links">
-                                    <a href="https://www.linkedin.com/in/navya-rathore-26a0081ba/">LINKEDIN</a>
-                                    
-                                    
-                                                       
-                            <div class="home-right-part"> 
-                                   
-                               
-                            </div>                            
-                        </div>
-                    </div>
-
-                   
-
-                    
-                    <!-- Resume Section -->  
-                    <div id="resume" class="section">                        
-                        <div class="section-wrapper block">
-                            <div class="content-1300">  
-                                <div class="row">
-                                    <div class="one-half width-55">
-                                        
-                                        <h2 class="entry-title section-title">Education</h2>
-
-                                        
-
-                                            <li class="timeline-event">
-                                                <span class="timeline-circle"></span>
-                                                <div class="timeline-event-content">                                    
-                                                    <b>2017</b> HighSchool: Central Board of secondary Education
-                                                </div>
-                                                <div class="timeline-event-date">2017</div>
-                                            </li>
-
-                                            <li class="timeline-event">
-                                                <span class="timeline-circle"></span>
-                                                <div class="timeline-event-content">
-                                                    <b>2019</b> Intermediate: Central Board of secondary Education
-                                                </div>
-                                                <div class="timeline-event-date">2019</div>
-                                            </li>
-
-                                            <li class="timeline-event">
-                                                <span class="timeline-circle"></span>
-                                                <div class="timeline-event-content">
-                                                    <b>2020-2024</b> Btech (Computer Science and Engineering): Dr. A.P.J. Abdul Kalam Technical University. 
-                                                </div>
-                                                <div class="timeline-event-date">2024</div>
-                                            </li>                                           
-
-                                                                                   
-                                        </ul>
-                                    </div>
-
-                                    <div class="one-half width-40 last">
-                                        <h2 class="entry-title section-title">Cover letter</h2>
-                                        <p class="section-info">
-                                            Welcome to my portfolio! I am a Computer Science & Engineering graduate with a specialization in Artificial Intelligence and Machine Learning from Dr. A.P.J. Abdul Kalam Technical University. My passion for coding, problem-solving, and creating impactful tech solutions has driven me to consistently push the boundaries of what technology can achieve.
-                                        </p>
-                                        <p>
-                                            During my academic journey, I have ranked among the top 2% in a national coding competition, CodeKaze, and earned a 5-star rating on Hackerrank, placing me in the top 10% of global participants. These achievements reflect my dedication to mastering algorithms, data structures, and advanced coding practices.
-                                        </p>
-                                        <p>
-                                            I have had the privilege of working on several exciting projects that combine AI, machine learning, and full-stack development. Notable projects include an AI-powered e-commerce platform that improved product search relevance by 30%, an automated attendance system using facial recognition that saved over 30 hours per month in manual tracking, and a real-time auction platform that handled thousands of transactions with enhanced security and performance.
-                                        </p>
-
-                                        <p>
-                                            I am proficient in Python, SQL, AWS, and React, and have extensive experience working with machine learning models and cloud infrastructure. My goal is to leverage my skills to build innovative and scalable solutions that solve real-world problems, improve user experience, and drive efficiency.Feel free to explore my portfolio to learn more about my projects, skills, and achievements. I am always eager to connect with like-minded professionals and work on challenging projects. If you're looking for someone with a strong technical background and a passion for innovation, I’d love to collaborate!
-
-
-                                        </p>  
-                                        <br>
-                                        <div class="button-group-wrapper">
-                                            <a href="https://drive.google.com/file/d/1PmfgAZyyrZ3JiBvCV9BH4SlIpGuKTlrB/view?usp=sharing" class="button">Download Cover Letter</a> 
-                                            <a href="https://drive.google.com/file/d/1FpVPBXaqw7otB9mQk5vPRu_WfTNOgLHw/view?usp=sharing" class="button">Download Resume</a>                                                                   
-                                        </div>                                      
-
-                                        <img class="my-signature" src="images/signature2.png" alt="">                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Skills Section -->  
-                    <div id="skills" class="section">                        
-                        <div class="section-wrapper block">
-                            <div class="content-1300"> 
-                                <div class="row m-bottom-60">
-                                    <h2 class="entry-title section-title">Skills</h2>
-
-                                    <div class="skill-circle-holder">
-                                        <div class="skill-circle">
-                                            <div class="skill-circle-wrapper relative" data-value="0.82" data-color="#f37b83" data-empty-color="#554247">
-                                                <span class="skill-circle-num"></span>                                            
-                                            </div>
-                                            <p class="skill-circle-text">Python</p>
-                                        </div>
-
-                                        <div class="skill-circle">
-                                            <div class="skill-circle-wrapper relative" data-value="0.65" data-color="#f37b83" data-empty-color="#554247">
-                                                <span class="skill-circle-num"></span>                                            
-                                            </div>
-                                            <p class="skill-circle-text">Machine learning</p>
-                                        </div>                                
-
-                                        <div class="skill-circle">
-                                            <div class="skill-circle-wrapper relative" data-value="0.65" data-color="#f37b83" data-empty-color="#554247">
-                                                <span class="skill-circle-num"></span>                                            
-                                            </div>
-                                            <p class="skill-circle-text">Artificial 
-                                                intelligence
-                                            </p>
-                                        </div>
-
-                                        <div class="skill-circle">
-                                            <div class="skill-circle-wrapper relative" data-value="0.85" data-color="#f37b83" data-empty-color="#554247">
-                                                <span class="skill-circle-num"></span>                                            
-                                            </div>
-                                            <p class="skill-circle-text">SQL</p>
-                                        </div>
-                                        <div class="skill-circle">
-                                            <div class="skill-circle-wrapper relative" data-value="0.85" data-color="#f37b83" data-empty-color="#554247">
-                                                <span class="skill-circle-num"></span>                                            
-                                            </div>
-                                            <p class="skill-circle-text">Data Structure and 
-                                                algorithms
-                                            </p>
-                                        </div>
-                                        <div class="skill-circle">
-                                            <div class="skill-circle-wrapper relative" data-value="0.85" data-color="#f37b83" data-empty-color="#554247">
-                                                <span class="skill-circle-num"></span>                                            
-                                            </div>
-                                            <p class="skill-circle-text">Problem Solving
-                                            </p>
-                                        </div>
-                                        <div class="skill-circle">
-                                            <div class="skill-circle-wrapper relative" data-value="0.85" data-color="#f37b83" data-empty-color="#554247">
-                                                <span class="skill-circle-num"></span>                                            
-                                            </div>
-                                            <p class="skill-circle-text">cloud
-                                            </p>
-                                        </div>
-                                    </div>                                    
-                                </div>
-
-
-                 
-                    <!-- Contact Section -->  
-                    <div id="contact" class="section">                        
-                        <div class="section-wrapper block">
-                            <div class="content-1300">   
-                                <div class="row">
-                                    <h2 class="entry-title section-title">Get in touch</h2>
-                                    <div class="one-half ">
-
-                                        <p class="section-info">
-                                            I’m always excited to connect with people who share a passion for innovation and technology. Whether you have a project idea, a question, or just want to say hello, feel free to reach out! Let’s collaborate and create something amazing together.
-                                        </p>
-                                        <p>
-                                            Your ideas matter, and I’m here to help bring them to life. Let's make the future a little brighter, one step at a time.
-                                        </p>                                    
-                                        
-                                        <p>
-                                            
-                                            <b>LINKEDIN:</b> https://www.linkedin.com/in/navya-rathore-26a0081ba/ <br>
-                                            <b>Git:</b> https://github.com/navya0407<br>
-                                        </p>
-                                    </div>
-
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>            
-        </div>        
-
-        <!--Load JavaScript-->
-        <script src="js/jquery.js"></script>			                                                               
-        <script src='js/imagesloaded.pkgd.js'></script>                
-        <script src='js/jquery.prettyPhoto.js'></script>                
-        <script src='js/isotope.pkgd.js'></script>                
-        <script src='js/jquery.smartmenus.min.js'></script>                           
-        <script src='js/owl.carousel.min.js'></script>                                                            
-        <script src='js/circle-progress.min.js'></script>                                                            
-        <script src='js/main.js'></script>
-    </body>
+</body>
 </html>
